@@ -1,0 +1,229 @@
+body{
+    background: rgb(252,217,223);
+    background: linear-gradient(90deg, rgba(252,217,223,1) 0%, rgba(207,224,248,1) 100%);
+}
+#minutes{
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width:230px;
+    height: 250px;
+    margin-right: 20px;
+}
+#seconds{
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width:230px;
+    height: 250px;
+    margin-left: 20px;
+
+}
+#container{
+    display: flex;
+    margin-left: 380px;
+    margin-top: 140px;
+}
+#separator{
+    font-size: 58px;
+}
+#mins, #sec{
+    font-size: 150px;
+    font-family: Cambria, Georgia, serif;
+    position: absolute;
+    top:20px;
+    left:27px;
+}
+#buttons{
+    margin-left: 305px;
+}
+button{
+    margin-top: 55px;
+    margin-left: 50px;
+    width:152px;
+    height: 42px;
+    background: rgba( 255, 255, 255, 0.3 );
+    border:0.5px;
+    border-radius: 50px;
+}
+button:hover{
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+}
+/*Surface Duo*/
+@media only screen and (min-device-width: 540px) and (max-device-width: 720px) {
+    #container{
+        display: flex;
+        margin-left: 180px;
+        margin-top: 340px;
+    }
+    button{
+        margin-top: 55px;
+        width:240px;
+        height: 82px;
+        background: rgba( 255, 255, 255, 0.3 );
+        border:0.5px;
+        border-radius: 50px;
+        font-size: 30px;
+    }
+    #buttons{
+        margin-left: 160px;
+        width: 800px;
+    }
+    #minutes{
+        background: rgba( 255, 255, 255, 0.3 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 6px );
+        -webkit-backdrop-filter: blur( 6px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        width:280px;
+        height: 300px;
+        margin-right: 20px;
+    }
+    #seconds{
+        background: rgba( 255, 255, 255, 0.3 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 6px );
+        -webkit-backdrop-filter: blur( 6px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        width:280px;
+        height: 300px;
+        margin-left: 20px;
+    }
+    #mins, #sec{
+        font-size: 150px;
+        font-family: Cambria, Georgia, serif;
+        position: absolute;
+        top:40px;
+        left:57px;
+    }
+    #stop{
+        margin-left: 200px;
+    }
+    #separator{
+        font-size: 88px;
+    }
+}
+/*iPad Mini*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    #container{
+        display: flex;
+        margin-left: 180px;
+        margin-top: 340px;
+    }
+    button{
+        margin-top: 55px;
+        width:250px;
+        height: 85px;
+        background: rgba( 255, 255, 255, 0.3 );
+        border:0.5px;
+        border-radius: 50px;
+        font-size: 30px;
+    }
+    #buttons{
+        margin-left: 160px;
+        width: 900px;
+    }
+    #minutes{
+        background: rgba( 255, 255, 255, 0.3 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 6px );
+        -webkit-backdrop-filter: blur( 6px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        width:290px;
+        height: 310px;
+        margin-right: 20px;
+    }
+    #seconds{
+        background: rgba( 255, 255, 255, 0.3 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 6px );
+        -webkit-backdrop-filter: blur( 6px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        width:290px;
+        height: 310px;
+        margin-left: 20px;
+    }
+    #mins, #sec{
+        font-size: 160px;
+        font-family: Cambria, Georgia, serif;
+        position: absolute;
+        top:50px;
+        left:57px;
+    }
+    #stop{
+        margin-left: 200px;
+    }
+    #separator{
+        font-size: 88px;
+    }
+}
+/*Samsung Galaxy S8+*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 740px) {
+    #container{
+        display: flex;
+        margin-left: 160px;
+        margin-top: 550px;
+    }
+    button{
+        margin-top: 55px;
+        width:390px;
+        height: 105px;
+        background: rgba( 255, 255, 255, 0.3 );
+        border:0.5px;
+        border-radius: 50px;
+        font-size: 30px;
+        margin-left: 130px;
+    }
+    #buttons{
+        margin-top: 105px;
+        margin-left: 160px;
+        width: 500px;
+    }
+    #minutes{
+        background: rgba( 255, 255, 255, 0.3 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 6px );
+        -webkit-backdrop-filter: blur( 6px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        width:310px;
+        height: 340px;
+        margin-right: 20px;
+    }
+    #seconds{
+        background: rgba( 255, 255, 255, 0.3 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 6px );
+        -webkit-backdrop-filter: blur( 6px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        width:310px;
+        height: 340px;
+        margin-left: 20px;
+    }
+    #mins, #sec{
+        font-size: 160px;
+        font-family: Cambria, Georgia, serif;
+        position: absolute;
+        top:50px;
+        left:57px;
+    }
+    #stop{
+        margin-left: 130px;
+    }
+    #separator{
+        font-size: 98px;
+    }
+}

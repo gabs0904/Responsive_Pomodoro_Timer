@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="script" href="script.js">
+    <script>
+        let timerName;
+       function startTimer(){
+          let minutes=parseInt(document.getElementById("mins").innerHTML);
+          let seconds=parseInt(document.getElementById("sec").innerHTML);
+
+           let m = checkMinute(minutes - 0);
+           let s = checkSecond((seconds - 1));
+
+           if(s==59){
+               m=m-1;
+               if(m<10){
+                   m="0"+m;
+               }
+           }
+
+           document.getElementById("mins").innerHTML = m;
+           document.getElementById("sec").innerHTML =s;
+           timerName = setTimeout(startTimer, 1000);
+
+           if(m==0 && s==0){
+               pauseTimer();
+           }
+       }
+       function checkMinute(min){
+           if(min<=9){
+               min = "0" + min;
+           }
+           return min;
+       }
+
+       function checkSecond(sec) {
+           if (sec < 10 && sec >= 0) {sec = "0" + sec};
+           if (sec < 0) {sec = "59"};
+           return sec;
+       }
+        function pauseTimer() {
+            clearTimeout(timerName);
+        }
+        function stopTimer(){
+            clearTimeout(timerName);
+            document.getElementById("mins").innerHTML = "25";
+            document.getElementById("sec").innerHTML ="00";
+        }
+    </script>
+</head>
+<body>
+       <div id="container">
+           <div id="minutes">
+             <span id="mins">25</span>
+           </div>
+           <div id="separator">
+                  <p>:</p>
+           </div>
+           <div id="seconds">
+               <span id="sec">00</span>
+           </div>
+       </div>
+       <div id="buttons">
+           <button id="start" onclick="startTimer()">Start</button>
+           <button id="pause" onclick="pauseTimer()">Pause</button>
+           <button id="stop" onclick="stopTimer()">Stop</button>
+       </div>
+
+</body>
+</html>
